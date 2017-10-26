@@ -1,0 +1,36 @@
+/* Show it is fixed to the top */
+body {
+  min-height: 75rem;
+  padding-top: 4.5rem;
+}
+
+body, html {
+    height: 100%;
+}
+
+display-3 {
+  text-align: center;
+}
+
+.banner-hechizos{
+  /* The image used */
+    background-image: ("/public/images/banner_hechizos.png");
+
+    /* Set a specific height */
+    height: 20%;
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.banner-text {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
