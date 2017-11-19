@@ -1,36 +1,48 @@
 /* Show it is fixed to the top */
+/* Letra banners */
+@import url('https://fonts.googleapis.com/css?family=Ruthie&subset=latin-ext');
+
 body {
   min-height: 75rem;
-  padding-top: 4.5rem;
+  padding-top: 51px;
 }
 
 body, html {
     height: 100%;
+    background-color: #1a1a1a;
+    color: #cc9900;
 }
 
-display-3 {
-  text-align: center;
+#banner-hechizos {
+  /*height: 50%;*/
+  background-image: url(../img/spells_banner.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: top center;
+  text-align: right;
+  font-family: 'Ruthie', cursive;
+  color: black;
 }
 
-.banner-hechizos{
-  /* The image used */
-    background-image: ("/public/images/banner_hechizos.png");
-
-    /* Set a specific height */
-    height: 20%;
-
-    /* Position and center the image to scale nicely on all screens */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+#banner-hechizos h1 {
+  padding-right: 25px;
+  font-size: 200px;
 }
 
-.banner-text {
-    text-align: center;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
+/* Para mantener la proporcion del banner */
+.sixteen-nine {
+  position: relative;
+}
+.sixteen-nine:before {
+  display: block;
+  content: "";
+  width: 100%;
+  padding-top: 56.25%;
+}
+.sixteen-nine > .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }

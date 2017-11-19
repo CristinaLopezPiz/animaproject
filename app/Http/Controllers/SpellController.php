@@ -10,7 +10,7 @@ class SpellController extends Controller
 
   public function index(){
     return view('spells', [
-      'spells' => Spell::where('Path', 'Luz')->get()
+      'spells' => Spell::where('Path', 'Luz')->simplePaginate(12)
     ]);
   }
 

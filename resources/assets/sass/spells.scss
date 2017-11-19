@@ -1,0 +1,75 @@
+// Letra banners
+@import url('https://fonts.googleapis.com/css?family=Ruthie&subset=latin-ext');
+
+@mixin banner($image) {
+  position: relative;
+  background-image: $image;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: top;
+  text-align: right;
+  font-family: 'Ruthie', cursive;
+  width: 100%;
+  height: 45%;
+  color: black;
+  // margin-bottom: 0;
+  > h1 {
+      position: absolute;
+      right: 16vw;
+      top: 16vh;
+      font-size: 10vw;
+  }
+}
+
+body {
+  min-height: 75rem;
+  padding-top: $navbar-height;
+}
+
+body, html {
+    height: 100%;
+    background-color: $bg-color;
+    color: $text-color-gold;
+}
+//
+// @mixin aspect-ratio($width, $height) {
+//   position: relative;
+//   &:before {
+//     display: block;
+//     content: "";
+//     width: 100%;
+//     padding-top: ($height / $width) * 100%;
+//   }
+//   > * {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+//   }
+// }
+
+#banner-hechizos {
+  @include banner(url(#{$imgPath}/spells_banner.jpg));
+}
+
+.left-sidebar {
+  position: sticky;
+  top: $navbar-height;
+  border-right-style: solid;
+  border-color: $text-color-gold;
+  border-width: 1px;
+  height: calc(100vh - #{$navbar-height});
+  // padding-top: 30px;
+  // ~ * {
+  //   padding-top: 30px;
+  // }
+}
+
+.tight-margin {
+  padding: 0 5px 0 5px;
+}
+.tile:hover {
+  transform: scale(1.1, 1.2);
+  z-index: 10;
+}

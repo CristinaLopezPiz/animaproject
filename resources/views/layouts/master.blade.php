@@ -7,7 +7,9 @@
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <!-- Stylesheet -->
-  <link href="{{ asset('css/prueba.css') }}" rel="stylesheet">
+  <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
   <title>AniMaster</title>
 </head>
@@ -38,6 +40,10 @@
   @section('content')
     <p>default</p>
   @show
+
+  <!-- Scripts -->
+  <script src="{{ asset('js/app.js') }}"></script>
+  <script src="{{ asset('js/jquery.jscroll.js') }}"></script>
 
 </body>
 </html>
