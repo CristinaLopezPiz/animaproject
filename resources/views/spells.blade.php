@@ -16,11 +16,11 @@
             <div class="row tight-margin update">
               @foreach ($row as $spell)
                 <article class="col-sm-3 tight-margin">
-                  <div class="thumbnail tile">
-                    <img src="/img/Luz.jpg"
-                    onError="{{ asset('img/' . $spell->image) }}"
+                  <div class="tile">
+                    <img src="{{ asset('img/' . $spell->image) }}"
+                    alt="{{ asset('img/' . $spell->image) }}"
                     style="width:100%">
-                    <div class="caption">
+                    <div class="title">
                       <p> {{ $spell->name }}. </p>
                     </div>
                   </div>
